@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kalkulator BMI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link javascript="script.js">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator BMI</h1>
+    </header>
+    <main>
+        <!-- Left Content -->
+        <section>
+            <!-- Introduction -->
+            <article>
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentu tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />Yuk hitung sekarang di kalkulator BMI</p>    
+            </article>
+
+            <!-- Form -->
+            <form>
+                <div class="form-input">
+                    <p>Jenis Kelamin:</p>
+                    <label for="pria">Pria</label>
+                    <input type="radio" id="pria" name="jenis_kelamin">
+                    <label for="wanita">Wanita</label>
+                    <input type="radio" id="wanita" name="jenis_kelamin">
+                </div>
+                
+                <div class="form-input">
+                    <label for="berat">Berat (kg)</label>
+                    <input type="number" id="berat" name="berat" required="required">
+                </div>
+                <div class="form-input">
+                    <label for="usia">Usia (tahun)</label>
+                    <input type="number" id="usia" name="usia" required="required">
+                </div>
+                <div class="form-input">
+                    <label for="tinggi">Tinggi Badan (cm)</label>
+                    <input type="number" id="tinggi" name="tinggi" required="required">
+                </div>
+                <div>
+                    <button class="bg-orange">Hitung BMI</button>
+                    <button class="bg-grey">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Right Content -->
+        <section>
+            <article class="section-result">
+                <header>
+                    <h2>Hasil</h2>
+                </header>
+                <!-- Result -->
+                <div class="result">
+                    <span id="berat-ideal">0</span>
+                    <p>Berat Badan Anda <span id="status">Normal</span></p>
+                </div>
+            </article>
+
+            <!-- Information -->
+            <article>
+                <h2>Informasi</h2>
+                <p>Berikut adalah kategori BMI menurut WHO</p>
+                <table>
+                    <tr>
+                        <th>BMI</th>
+                        <th>Kategori</th>
+                    </tr>
+                    <tr>
+                        <td>&lt; 18.5</td>
+                        <td>Kekurangan berat badan</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Normal (ideal)</td>
+                    </tr>
+                    <tr>
+                        <td>25 - 29.9</td>
+                        <td>Kelebihan berat badan</td>
+                    </tr>
+                    <tr>
+                        <td>&gt; 30</td>
+                        <td>Kegemukan (obesitas)</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <span>Mini Project RevoU by Muhammad Alam</span>
+    </footer>
+</body>
+</html>

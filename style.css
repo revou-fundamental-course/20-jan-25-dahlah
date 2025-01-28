@@ -1,0 +1,68 @@
+body {
+    background-color: azure;
+    margin: 10;
+    padding: 5;
+}
+main {
+    display: flex;
+    gap: 40px;
+    margin: 30px;
+}
+
+section {
+    width: 50%;
+}
+form {
+    background-color: aqua;
+}
+input[type=number] {
+    width: 100%;
+    color: white;
+    padding: 12px;
+    margin: 8px 0;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.form-input {
+    padding-bottom: 16px;
+}
+#berat-ideal{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: Verdana;
+}
+.section-result {
+    background-color: aqua;
+    padding: 10px;
+}
+.result {
+    text-align: center;
+}
+header {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 10px 20px;
+}
+
+.bg-grey {
+    background-color: grey;
+    color: white;
+}
+
+.bg-orange {
+    background-color: orange;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
