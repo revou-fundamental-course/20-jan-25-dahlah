@@ -14,55 +14,84 @@ section {
 }
 form {
     background-color: aqua;
+    padding: 20px;
 }
+
+
 input[type=number] {
     width: 100%;
-    color: white;
+    color: black;
     padding: 12px;
     margin: 8px 0;
     cursor: pointer;
     box-sizing: border-box;
 }
+
+
 .form-input {
     padding-bottom: 16px;
 }
-#berat-ideal{
+
+/* membuat hasil BMI menjadi center */
+#result-bmi{
     text-align: center;
     font-size: xx-large;
     font-weight: bold;
     font-family: Verdana;
 }
+
+/* membuat tampilan section result menjadi center */
 .section-result {
     background-color: aqua;
     padding: 10px;
 }
+
+/* membuat tampilan result menjadi center */
 .result {
     text-align: center;
 }
+
+/* membuat header menjadi center */
 header {
     text-align: center;
 }
 
+/* styling tombol button */
 button {
     border: none;
     padding: 10px 20px;
 }
 
+/* membuat warna background menjadi grey */
 .bg-grey {
     background-color: grey;
     color: white;
 }
 
+/* membuat warna background menjadi orange */
 .bg-orange {
     background-color: orange;
     color: white;
 }
 
+/* membuat data pada table menjadi center */
 td {
     text-align: center;
 }
+
+
 footer {
     background-color: black;
     color: white;
     text-align: center;
+}
+
+/* membuat margin bottom = 0px */
+.no-margin-bottom {
+    margin-bottom: 0;
+}
+
+/* membuat text bold */
+.bold {
+    font-weight: bold;
 }

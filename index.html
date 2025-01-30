@@ -5,45 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link javascript="js/script.js">
 </head>
 <body>
     <header>
-        <h1>Kalkulator BMI</h1>
+        <h1>Kalkulator <abbr title="Body Mass Index">BMI</abbr></h1>
     </header>
     <main>
         <!-- Left Content -->
         <section>
             <!-- Introduction -->
             <article>
-                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentu tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?<br />Yuk hitung sekarang di kalkulator BMI</p>    
+                <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentu tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?</p>
+                <p>Yuk, hitung BMI-mu sekarang!</p>    
             </article>
 
             <!-- Form -->
             <form>
                 <div class="form-input">
-                    <p>Jenis Kelamin:</p>
+                    <p class="no-margin-bottom bold">Jenis Kelamin:</p>
                     <label for="pria">Pria</label>
-                    <input type="radio" id="pria" name="jenis_kelamin">
+                    <input type="radio" id="pria" name="jenis_kelamin" checked="checked">
                     <label for="wanita">Wanita</label>
                     <input type="radio" id="wanita" name="jenis_kelamin">
                 </div>
                 
                 <div class="form-input">
-                    <label for="berat">Berat (kg)</label>
-                    <input type="number" id="berat" name="berat" required="required">
+                    <label for="berat" class="bold">Berat (kg)</label>
+                    <input type="number" id="berat" name="berat">
                 </div>
                 <div class="form-input">
-                    <label for="usia">Usia (tahun)</label>
-                    <input type="number" id="usia" name="usia" required="required">
+                    <label for="usia" class="bold">Usia (tahun)</label>
+                    <input type="number" id="usia" name="usia">
                 </div>
                 <div class="form-input">
-                    <label for="tinggi">Tinggi Badan (cm)</label>
-                    <input type="number" id="tinggi" name="tinggi" required="required">
+                    <label for="tinggi" class="bold">Tinggi Badan (cm)</label>
+                    <input type="number" id="tinggi" name="tinggi">
                 </div>
                 <div>
-                    <button class="bg-orange">Hitung BMI</button>
-                    <button class="bg-grey">Reset</button>
+                    <button class="bg-orange bold" type="button" onclick="calculateBMI()">Hitung BMI</button>
+                    <button class="bg-grey bold">Reset</button>
                 </div>
             </form>
         </section>
@@ -56,15 +56,15 @@
                 </header>
                 <!-- Result -->
                 <div class="result">
-                    <span id="berat-ideal">0</span>
-                    <p>Berat Badan Anda <span id="status">Normal</span></p>
+                    <span id="result-bmi">0</span>
+                    <p id="result-status">harap isi data untuk mengetahui kategori BMI anda</p>
                 </div>
             </article>
 
             <!-- Information -->
             <article>
                 <h2>Informasi</h2>
-                <p>Berikut adalah kategori BMI menurut WHO</p>
+                <p>Berikut adalah kategori BMI menurut <abbr title="World Health Organization">WHO</abbr></p>
                 <table>
                     <tr>
                         <th>BMI</th>
@@ -88,11 +88,20 @@
                     </tr>
                 </table>
             </article>
+
+            <article>
+                <h2>Apa itu BMI?</h2>
+                <p><abbr title="Body Mass Index">BMI</abbr> atau Indeks Massa Tubuh adalah metode yang digunakan untuk mengukur apakah seseorang memiliki berat badan yang sehat berdasarkan tinggi dan berat badannya. <abbr title="Body Mass Index">BMI</abbr> dihitung dengan rumus:</p>
+                <p>BMI = Berat Badan (kg) / (Tinggi Badan (m))²</p>
+                <p>Dengan kata lain, BMI adalah angka yang menunjukkan hubungan antara berat badan dan tinggi badan Anda. Meskipun mudah dihitung, BMI tidak selalu menggambarkan kesehatan tubuh secara menyeluruh. Hal ini karena BMI hanya mempertimbangkan berat badan dan tinggi badan tanpa memperhitungkan faktor lainnya seperti komposisi tubuh, distribusi lemak, dan faktor genetik.</p>
+            </article>
         </section>
     </main>
     
     <footer>
-        <span>Mini Project RevoU by Muhammad Alam</span>
+        <span>Mini Project RevoU by Muhammad Hamdan Nur Alam</span>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
